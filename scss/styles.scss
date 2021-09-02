@@ -1,0 +1,357 @@
+@import './variables';
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Cinzel:wght@400;500&display=swap');
+
+
+html, body{
+  margin:0;
+  background:$bg;
+  color:$white;
+  overflow:hidden;
+  color:black;
+  font-family: 'Kaisei HarunoUmi', serif;
+  h1,h2{
+    font-family: 'Cinzel Decorative', cursive;
+  }
+}
+
+    button{
+        padding:6px 18px;
+        font-family: 'Kaisei HarunoUmi', serif;
+        color:black;
+        border:1px solid black;
+        outline:solid white 1px;
+        background-color: rgba(255, 255, 255, 0.3); 
+        transition: all .4s ease-in-out;
+        font-size:15px;
+        &:hover{
+        cursor:pointer;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: 1px solid white;
+        outline:solid black 1px;
+        color:white;
+        transition: all .4s ease-in-out;
+        }
+    }
+
+
+.nav{
+  z-index:2;
+  position:fixed;
+  top:0;
+  left:0;
+  display:grid;
+  place-items:center;
+  text-align:center;
+  height:100vh;
+  width:100%;
+  transition: all $basic-transition $cb, font-size 1ms;
+  .navsActivated{
+    transition-delay:$basic-transition + 100ms;
+    transition: all $basic-transition $cb, font-size 1ms;
+    transform:translateX(75vw);
+    opacity:0;
+  }
+  .bg{
+    opacity:0.8;
+    position:fixed;
+    background-image:url('/assets/bg.jpg');
+    background-size:cover;
+    height:100vh;
+    width:100vw;
+    transition: opacity $basic-transition;
+    transition-delay:$basic-transition;
+  }
+  .bgActivated{
+    opacity:0;
+    transition: opacity $basic-transition;
+    transition-delay:$basic-transition;
+  }
+  .navs{
+    z-index:1;
+    padding:0;
+    margin:0;
+    list-style-type: none;
+    .navList{
+      display: inline-block;
+      color:$gray;
+      font-family: 'Cinzel', serif;
+      font-weight:700;
+      text-transform:uppercase;
+      text-decoration:none;
+      transition: all $basic-transition $cb, font-size 1ms;
+      &:hover{
+        cursor:pointer;
+        color:$white;
+        transition: all $basic-transition $cb, font-size 1ms;
+        transform:translateY(-10px);
+      }
+    }
+  }
+}
+.navActivated{
+  transition-delay:$basic-transition + 100ms;
+  transform:translateY(-100vh);
+}
+
+#home, #tbb, #ql, #bws, #bks{
+  height:100vh;
+  background-size:cover;
+  background-position:center;
+  transition: all $basic-transition $cb, font-size 1ms;
+  transition-delay:$basic-transition;
+  clip-path: inset(10% 10% 10% 10%);
+}
+
+#home{
+    background-image:url('/assets/home.png');
+}
+
+#tbb{
+    background-image:url('/assets/tbb.png');
+}
+
+#ql{
+    background-image:url('/assets/ql.png');
+}
+
+#bws{
+    background-image:url('/assets/bws.png');
+}
+
+#bks{
+    background-image:url('/assets/bks.png');
+}
+
+.imagesActivated{
+  clip-path: inset(0% 0% 0% 0%) !important;
+  transition: all $basic-transition $cb, font-size 1ms;
+  transition-delay:$basic-transition;
+}
+
+
+.navbar {
+  text-decoration:none;
+  .nav-link {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    font-size: 30px;
+    font-family: 'Cinzel Decorative', cursive;
+    margin:10px 0 0 30px;
+    color: rgba(0, 0, 0, 0.7);
+    padding:0 5px 0 5px;
+    -webkit-transition: all $basic-transition 150ms $cb;
+    -moz-transition: all $basic-transition 150ms $cb;
+    -o-transition: all $basic-transition 150ms $cb;
+    transition: all $basic-transition 150ms $cb;
+    .title-background {
+      z-index:-1;
+      position: absolute;
+      top: 26px;
+      left: 0;
+      right: 0;
+      bottom: 0px;
+      height:6px;
+      background: $before-light;
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+      -webkit-transition: all $basic-transition 150ms $cb;
+      -moz-transition: all $basic-transition 150ms $cb;
+      -o-transition: all $basic-transition 150ms $cb;
+      transition: all $basic-transition 150ms $cb;
+    }
+    &:hover {
+      cursor:pointer;
+      color: $white;
+      -webkit-transition: all $basic-transition $cb;
+      -moz-transition: all $basic-transition $cb;
+      -o-transition: all $basic-transition $cb;
+      transition: all $basic-transition $cb;
+      .title-background {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        -webkit-transition: all $basic-transition $cb;
+        -moz-transition: all $basic-transition $cb;
+        -o-transition: all $basic-transition $cb;
+        transition: all $basic-transition $cb;
+        background: $highlight-bg;
+      }
+    }
+  }
+
+  .link-white{
+      color: rgba(255,255,255,0.7);
+  }
+}
+
+.info{
+  padding:0vh 35vh;
+  font-size:1.1em;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  .bio{
+    padding-top: 30px;
+  }
+  h2{
+    margin-top:1.5em;
+    margin-bottom: 1.2em;
+  }
+}
+
+
+/************TOP SHELVES************/
+
+.top-shelf{
+  display:flex;
+  justify-content: center;
+}
+
+.shelf{
+  position:relative;
+	width:60%;
+  &::after{
+  background:url("/assets/shelf.png");
+	background-size:100%;
+	background-repeat: no-repeat;
+	background-position:bottom left;
+	width:100%;
+	height:175px;
+	display:block;
+	content:"";
+  }
+}
+
+.top-shelf .shelf > div{
+  	width:33%;
+    height:100%;
+    background-size: contain;
+	  float:left;
+}
+
+.top-shelf .sample{
+	margin:auto;
+	position: relative;
+	z-index:1;
+	box-shadow:2px 2px 5px rgba(0,0,0,0.6);
+	transition:transform 0.1s;
+	transform:translate(0, 0);
+}
+
+.sample:hover, .sample:active{
+	z-index:2;
+	cursor: pointer;;
+	background-color:white;
+	transform: scale3d(1.1, 1.1, 1) translate3d(0, -5px, 0);
+}
+
+.top-shelf .book{
+    background-size: 83px 115px;
+    width:83px;
+	  height:115px;
+}
+
+.top-shelf .book1{
+	background-image:url("/assets/ardor.jpg");
+}
+
+
+.top-shelf .book2{
+	background-image:url("/assets/sun.jpg");
+}
+
+.top-shelf .book3{
+	background-image:url("/assets/jade.jpg");
+}
+
+
+.top-shelf .book4{
+	background-image:url("/assets/phoenix.jpg");
+}
+
+.top-shelf .book5{
+	background-image:url("/assets/unbroken.jpg");
+}
+
+.top-shelf .book6{
+	background-image:url("/assets/pride.jpg");
+}
+
+.top-shelf .book7{
+	background-image:url("/assets/path.jpg");
+}
+
+.top-shelf .book8{
+	background-image:url("/assets/skin.jpg");
+}
+
+.top-shelf .book9{
+	background-image:url("/assets/far.jpg");
+}
+
+.top-shelf .book10{
+	background-image:url("/assets/forever.jpg");
+}
+
+.top-shelf .book11{
+	background-image:url("/assets/five.jpg");
+}
+
+.top-shelf .book12{
+	background-image:url("/assets/storm.jpg");
+}
+
+
+/*==========SMALLER MOBILES========*/  
+@media only screen and (max-width: 768px) {
+
+  .tbb-h1{
+    font-size:26px;
+  }
+
+    .navs{
+        width:100vw;
+        padding:0;
+        margin:0;
+    }
+
+  .navbar {
+    .nav-link {
+      font-size: 20px;
+      margin:15px 0 0 10px;
+    .title-background {
+        height:5px;
+        top: 20px;
+        background: $before-light;
+      }
+    }
+  }
+
+    .info{
+      padding:0 8px;
+      font-size:.9em;
+      .bio{
+        padding-top: 10px;
+      }
+      h2{
+        margin-top:1.3em;
+      }
+    }
+
+
+    .shelf{
+      width:95%;
+      &::after{
+        height:130px;
+      }
+    }
+
+  .top-shelf .book{
+      background-size: 60px 92px;
+      width:60px;
+	    height:92px;
+  }
+
+};
+
