@@ -13,7 +13,7 @@
     <meta name="twitter:creator" content="@voyagerarina">
     <meta name="twitter:title" content="Wyrm's Emporium">
     <meta name="twitter:description" content="Welcome to Wyrm's Emporium, your tbr-toppling place of trade.">
-    <meta name="twitter:image" content="http://i.ibb.co/gTFLdNw/home.png">
+    <meta name="twitter:image" content="https://github.com/wyrmsworlds/wyrmsworlds.github.io/blob/22c7a7fb530471f0a9e248fcb955ee60544e104d/assets/home.png">
 
     <!--External CSS-->
     <link rel="stylesheet" href="/skel/css/styles.css">
