@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
- <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crow's Head Emporium</title>
@@ -12,8 +12,12 @@
     <meta name="twitter:site" content="https://wyrmsworlds.github.io">
     <meta name="twitter:creator" content="@voyagerarina">
     <meta name="twitter:title" content="Crow's Head Emporium">
-    <meta name="twitter:description" content="Welcome to the Crow's Head Emporium, your tbr-toppling comfort zone.">
-    <meta name="twitter:image" content="/assets/home.png">
+    <meta name="twitter:description" content="Welcome to the Crow's Head Emporium, Wyrm's Worlds tbr-toppling place of trade.">
+    <meta name="twitter:image" content="https://drive.google.com/file/d/1EAZPSeDJ4f7lQ-Tqy2ZScLfc8_ReeeJJ/view?usp=sharing">
+
+    <!--External CSS-->
+    <link rel="stylesheet" href="/skel/css/styles.css">
+
 
     <!--External CSS-->
     <link rel="stylesheet" href="/skel/css/styles.css">
