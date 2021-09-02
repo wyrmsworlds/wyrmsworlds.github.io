@@ -8,7 +8,7 @@
     <title>Crow's Head Emporium</title>
     
     <!--Twitter Card Meta-->
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="https://wyrmsworlds.github.io">
     <meta name="twitter:creator" content="@voyagerarina">
     <meta name="twitter:title" content="Crow's Head Emporium">
