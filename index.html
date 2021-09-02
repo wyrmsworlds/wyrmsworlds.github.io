@@ -13,7 +13,7 @@
     <meta name="twitter:creator" content="@voyagerarina">
     <meta name="twitter:title" content="Crow's Head Emporium">
     <meta name="twitter:description" content="Welcome to the Crow's Head Emporium, Wyrm's Worlds tbr-toppling place of trade.">
-    <meta name="twitter:image" content="https://drive.google.com/file/d/1EAZPSeDJ4f7lQ-Tqy2ZScLfc8_ReeeJJ/view?usp=sharing">
+    <meta name="twitter:image" content="https://i.ibb.co/gTFLdNw/home.png">
 
     <!--External CSS-->
     <link rel="stylesheet" href="/skel/css/styles.css">
