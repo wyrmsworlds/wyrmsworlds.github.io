@@ -5,7 +5,6 @@ $(document).ready(function () {
     });
 
 
-
     function navig() {
         const nav = document.querySelector(`.nav`);
         const navs = document.querySelector(`.navs`)
@@ -18,14 +17,19 @@ $(document).ready(function () {
         checkScreenSize();
         function checkScreenSize() {
             var newWindowWidth = $(window).width();
-            if (newWindowWidth < 481) {
+            if (newWindowWidth < 768) {
                 nav.style.fontSize = `${h / 24}px`;
                 window.addEventListener(`resize`, () => {
                     let h = nav.clientHeight;
                     nav.style.fontSize = `${h / 24}px`;
                 });
-            }
-            else {
+            } else if (screen.availHeight > screen.availWidth) {
+                nav.style.fontSize = `${h / 20}px`;
+                window.addEventListener(`resize`, () => {
+                    let h = nav.clientHeight;
+                    nav.style.fontSize = `${h / 20}px`;
+                });
+            } else {
                 nav.style.fontSize = `${h / 8}px`;
                 window.addEventListener(`resize`, () => {
                     let h = nav.clientHeight;
@@ -66,6 +70,15 @@ $(document).ready(function () {
         });
     }
 
+    orientationChange();
+    function orientationChange() {
+        if (window.addEventListener) {
+            window.addEventListener("orientationchange", function () {
+                location.reload();
+            });
+        }
+    }
     navig();
+
 
 });
