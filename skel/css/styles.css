@@ -337,7 +337,7 @@ button:hover {
   background-image: url("/assets/storm.jpg");
 }
 
-/*==========SMALLER MOBILES========*/
+/*==========MOBILES========*/
 @media only screen and (max-width: 768px) {
   .tbb-h1 {
     font-size: 26px;
@@ -376,6 +376,48 @@ button:hover {
     background-size: 60px 92px;
     width: 60px;
     height: 92px;
+  }
+}
+
+/*==========TABLETS/IPAD========*/
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .tbb-h1 {
+    font-size: 26px;
+  }
+  .navs {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+  }
+  .navbar .nav-link {
+    font-size: 20px;
+    margin: 15px 0 0 10px;
+  }
+  .navbar .nav-link .title-background {
+    height: 5px;
+    top: 20px;
+    background: #c3b4b0;
+  }
+  .info {
+    padding: 0 30px;
+    font-size: .9em;
+  }
+  .info .bio {
+    padding-top: 250px;
+  }
+  .info h2 {
+    margin-top: 1.5em;
+  }
+  .shelf {
+    width: 85%;
+  }
+  .shelf::after {
+    height: 245px;
+  }
+  .top-shelf .book {
+    background-size: 115px 162px;
+    width: 115px;
+    height: 162px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
