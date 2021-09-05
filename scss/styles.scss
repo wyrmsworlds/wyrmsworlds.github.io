@@ -303,8 +303,8 @@ html, body{
 }
 
 
-/*==========SMALLER MOBILES========*/  
-@media only screen and (max-width: 768px) {
+/*==========MOBILES========*/  
+@media only screen and (max-width:768px){
 
   .tbb-h1{
     font-size:26px;
@@ -351,6 +351,61 @@ html, body{
       background-size: 60px 92px;
       width:60px;
 	    height:92px;
+  }
+
+};
+
+/*==========TABLETS/IPAD========*/  
+@media only screen and (min-device-width:481px)
+                  and (max-device-width:1024px) 
+                  and (orientation:portrait){
+
+  .tbb-h1{
+    font-size:26px;
+  }
+
+    .navs{
+        width:100vw;
+        padding:0;
+        margin:0;
+    }
+
+  .navbar {
+    .nav-link {
+      font-size: 20px;
+      margin:15px 0 0 10px;
+    .title-background {
+        height:5px;
+        top: 20px;
+        background: $before-light;
+      }
+    }
+  }
+
+
+    .info{
+      padding:0 30px;
+      font-size:.9em;
+      .bio{
+        padding-top: 250px;
+      }
+      h2{
+        margin-top:1.5em;
+      }
+    }
+
+
+    .shelf{
+      width:85%;
+      &::after{
+        height:245px;
+      }
+    }
+
+  .top-shelf .book{
+      background-size: 115px 162px;
+      width:115px;
+	    height:162px;
   }
 
 };
